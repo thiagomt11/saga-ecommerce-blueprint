@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="2670" version="1.1" viewBox="0 0 3200 2670" width="3200">
+  <defs>
+    <marker id="end-blue" markerHeight="10" markerWidth="12" orient="auto" refX="10" refY="5">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563EB"/>
+    </marker>
+    <marker id="end-green" markerHeight="10" markerWidth="12" orient="auto" refX="10" refY="5">
+      <path d="M0,0 L10,5 L0,10 z" fill="#087F5B"/>
+    </marker>
+    <marker id="end-orange" markerHeight="10" markerWidth="12" orient="auto" refX="10" refY="5">
+      <path d="M0,0 L10,5 L0,10 z" fill="#C45C12"/>
+    </marker>
+    <marker id="end-ink" markerHeight="10" markerWidth="12" orient="auto" refX="10" refY="5">
+      <path d="M0,0 L10,5 L0,10 z" fill="#15253A"/>
+    </marker>
+    <marker id="end-red" markerHeight="10" markerWidth="12" orient="auto" refX="10" refY="5">
+      <path d="M0,0 L10,5 L0,10 z" fill="#C43D4B"/>
+    </marker>
+  </defs>
+  <rect fill="#F7FAFE" height="2670" width="3200" x="0" y="0"/>
+  <rect fill="#2563EB" height="14" rx="0" ry="0" stroke="none" stroke-width="2" width="3200" x="0" y="0"/>
+  <text fill="#112640" font-family="DejaVu Sans" font-size="52" font-weight="bold" text-anchor="start" x="80" y="100">Fluxo de sucesso | compra concluída</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="26" font-weight="normal" text-anchor="start" x="80" y="148">Pedido → estoque → pagamento → confirmação com consistência eventual</text>
+  <rect fill="#EFF5FF" height="52" rx="22" ry="22" stroke="#CCD8E7" stroke-width="2" width="207" x="2915" y="60"/>
+  <text fill="#2563EB" font-family="DejaVu Sans" font-size="22" font-weight="bold" text-anchor="middle" x="3018.5" y="94">FLUXO FELIZ</text>
+  <line fill="none" stroke="#CCD8E7" stroke-width="2" x1="80" x2="3120" y1="190" y2="190"/>
+  <rect fill="#FFFFFF" height="92" rx="14" ry="14" stroke="#CCD8E7" stroke-width="2" width="3010" x="95" y="210"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="24" font-weight="bold" text-anchor="start" x="130" y="249">Regra:</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="22" font-weight="normal" text-anchor="start" x="240" y="249">persistir atualização + Outbox atomicamente; consumidores mantêm Inbox/idempotência; processamento assíncrono = tracejado.</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="20" font-weight="normal" text-anchor="start" x="130" y="283">Mensagens azuis: comandos / eventos   ·   Verdes: respostas positivas   ·   Laranja: compensação   ·   Vermelho: recusa</text>
+  <rect fill="#FFFFFF" height="106" rx="14" ry="14" stroke="#CCD8E7" stroke-width="2" width="295" x="42.5" y="332"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="25" font-weight="bold" text-anchor="middle" x="190" y="377">Cliente</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="19" font-weight="normal" text-anchor="middle" x="190" y="414">HTTP</text>
+  <line fill="none" stroke="#B4C6D9" stroke-dasharray="8,8" stroke-width="2" x1="190" x2="190" y1="440" y2="2573"/>
+  <rect fill="#FFFFFF" height="106" rx="14" ry="14" stroke="#CCD8E7" stroke-width="2" width="350" x="480.0" y="332"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="25" font-weight="bold" text-anchor="middle" x="655" y="377">Order Service</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="19" font-weight="normal" text-anchor="middle" x="655" y="414">Pedidos</text>
+  <line fill="none" stroke="#B4C6D9" stroke-dasharray="8,8" stroke-width="2" x1="655" x2="655" y1="440" y2="2573"/>
+  <rect fill="#EFF5FF" height="106" rx="14" ry="14" stroke="#CCD8E7" stroke-width="2" width="350" x="920.0" y="332"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="25" font-weight="bold" text-anchor="middle" x="1095" y="377">Broker</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="19" font-weight="normal" text-anchor="middle" x="1095" y="414">Eventos / comandos</text>
+  <line fill="none" stroke="#B4C6D9" stroke-dasharray="8,8" stroke-width="2" x1="1095" x2="1095" y1="440" y2="2573"/>
+  <rect fill="#EFF5FF" height="106" rx="14" ry="14" stroke="#CCD8E7" stroke-width="2" width="350" x="1370.0" y="332"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="25" font-weight="bold" text-anchor="middle" x="1545" y="377">Saga Orchestrator</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="19" font-weight="normal" text-anchor="middle" x="1545" y="414">Coordenação</text>
+  <line fill="none" stroke="#B4C6D9" stroke-dasharray="8,8" stroke-width="2" x1="1545" x2="1545" y1="440" y2="2573"/>
+  <rect fill="#FFFFFF" height="106" rx="14" ry="14" stroke="#CCD8E7" stroke-width="2" width="350" x="1820.0" y="332"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="25" font-weight="bold" text-anchor="middle" x="1995" y="377">Inventory Service</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="19" font-weight="normal" text-anchor="middle" x="1995" y="414">Estoque</text>
+  <line fill="none" stroke="#B4C6D9" stroke-dasharray="8,8" stroke-width="2" x1="1995" x2="1995" y1="440" y2="2573"/>
+  <rect fill="#FFFFFF" height="106" rx="14" ry="14" stroke="#CCD8E7" stroke-width="2" width="350" x="2265.0" y="332"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="25" font-weight="bold" text-anchor="middle" x="2440" y="377">Payment Service</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="19" font-weight="normal" text-anchor="middle" x="2440" y="414">Pagamento</text>
+  <line fill="none" stroke="#B4C6D9" stroke-dasharray="8,8" stroke-width="2" x1="2440" x2="2440" y1="440" y2="2573"/>
+  <rect fill="#FFFFFF" height="106" rx="14" ry="14" stroke="#CCD8E7" stroke-width="2" width="295" x="2742.5" y="332"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="25" font-weight="bold" text-anchor="middle" x="2890" y="377">Gateway</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="19" font-weight="normal" text-anchor="middle" x="2890" y="414">Terceiro</text>
+  <line fill="none" stroke="#B4C6D9" stroke-dasharray="8,8" stroke-width="2" x1="2890" x2="2890" y1="440" y2="2573"/>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="223" x="311.0" y="470"/>
+  <line fill="none" marker-end="url(#end-ink)" stroke="#15253A" stroke-width="3" x1="215" x2="620.0" y1="504" y2="504.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="422.5" y="495">01  POST /orders</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="365" x="240.0" y="558"/>
+  <line fill="none" marker-end="url(#end-ink)" stroke="#15253A" stroke-width="3" x1="630" x2="225.0" y1="592" y2="592.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="422.5" y="583">02  202 + orderId (PENDING)</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="230" x="760.0" y="646"/>
+  <line fill="none" marker-end="url(#end-blue)" stroke="#2563EB" stroke-dasharray="10,7" stroke-width="3" x1="680" x2="1060.0" y1="680" y2="680.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="875.0" y="671">03  OrderCreated</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="230" x="1205.0" y="734"/>
+  <line fill="none" marker-end="url(#end-blue)" stroke="#2563EB" stroke-dasharray="10,7" stroke-width="3" x1="1120" x2="1510.0" y1="768" y2="768.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1320.0" y="759">04  OrderCreated</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="231" x="1204.5" y="822"/>
+  <line fill="none" marker-end="url(#end-blue)" stroke="#2563EB" stroke-dasharray="10,7" stroke-width="3" x1="1520" x2="1130.0" y1="856" y2="856.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1320.0" y="847">05  ReserveStock</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="231" x="1429.5" y="910"/>
+  <line fill="none" marker-end="url(#end-blue)" stroke="#2563EB" stroke-dasharray="10,7" stroke-width="3" x1="1120" x2="1960.0" y1="944" y2="944.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1545.0" y="935">06  ReserveStock</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="245" x="1422.5" y="998"/>
+  <line fill="none" marker-end="url(#end-green)" stroke="#087F5B" stroke-dasharray="10,7" stroke-width="3" x1="1970" x2="1130.0" y1="1032" y2="1032.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1545.0" y="1023">07  StockReserved</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="245" x="1197.5" y="1086"/>
+  <line fill="none" marker-end="url(#end-green)" stroke="#087F5B" stroke-dasharray="10,7" stroke-width="3" x1="1120" x2="1510.0" y1="1120" y2="1120.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1320.0" y="1111">08  StockReserved</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="257" x="1191.5" y="1174"/>
+  <line fill="none" marker-end="url(#end-blue)" stroke="#2563EB" stroke-dasharray="10,7" stroke-width="3" x1="1520" x2="1130.0" y1="1208" y2="1208.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1320.0" y="1199">09  ChargePayment</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="257" x="1639.0" y="1262"/>
+  <line fill="none" marker-end="url(#end-blue)" stroke="#2563EB" stroke-dasharray="10,7" stroke-width="3" x1="1120" x2="2405.0" y1="1296" y2="1296.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1767.5" y="1287">10  ChargePayment</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="363" x="2483.5" y="1350"/>
+  <line fill="none" marker-end="url(#end-ink)" stroke="#15253A" stroke-width="3" x1="2465" x2="2855.0" y1="1384" y2="1384.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="2665.0" y="1375">11  charge(idempotencyKey)</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="330" x="2500.0" y="1438"/>
+  <line fill="none" marker-end="url(#end-ink)" stroke="#15253A" stroke-width="3" x1="2865" x2="2475.0" y1="1472" y2="1472.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="2665.0" y="1463">12  pagamento capturado</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="281" x="1627.0" y="1526"/>
+  <line fill="none" marker-end="url(#end-green)" stroke="#087F5B" stroke-dasharray="10,7" stroke-width="3" x1="2415" x2="1130.0" y1="1560" y2="1560.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1767.5" y="1551">13  PaymentCaptured</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="281" x="1179.5" y="1614"/>
+  <line fill="none" marker-end="url(#end-green)" stroke="#087F5B" stroke-dasharray="10,7" stroke-width="3" x1="1120" x2="1510.0" y1="1648" y2="1648.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1320.0" y="1639">14  PaymentCaptured</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="301" x="1169.5" y="1702"/>
+  <line fill="none" marker-end="url(#end-blue)" stroke="#2563EB" stroke-dasharray="10,7" stroke-width="3" x1="1520" x2="1130.0" y1="1736" y2="1736.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1320.0" y="1727">15  CommitReservation</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="301" x="1394.5" y="1790"/>
+  <line fill="none" marker-end="url(#end-blue)" stroke="#2563EB" stroke-dasharray="10,7" stroke-width="3" x1="1120" x2="1960.0" y1="1824" y2="1824.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1545.0" y="1815">16  CommitReservation</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="266" x="1412.0" y="1878"/>
+  <line fill="none" marker-end="url(#end-green)" stroke="#087F5B" stroke-dasharray="10,7" stroke-width="3" x1="1970" x2="1130.0" y1="1912" y2="1912.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1545.0" y="1903">17  StockCommitted</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="266" x="1187.0" y="1966"/>
+  <line fill="none" marker-end="url(#end-green)" stroke="#087F5B" stroke-dasharray="10,7" stroke-width="3" x1="1120" x2="1510.0" y1="2000" y2="2000.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1320.0" y="1991">18  StockCommitted</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="230" x="1205.0" y="2054"/>
+  <line fill="none" marker-end="url(#end-blue)" stroke="#2563EB" stroke-dasharray="10,7" stroke-width="3" x1="1520" x2="1130.0" y1="2088" y2="2088.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1320.0" y="2079">19  ConfirmOrder</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="230" x="760.0" y="2142"/>
+  <line fill="none" marker-end="url(#end-blue)" stroke="#2563EB" stroke-dasharray="10,7" stroke-width="3" x1="1070" x2="690.0" y1="2176" y2="2176.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="875.0" y="2167">20  ConfirmOrder</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="259" x="745.5" y="2230"/>
+  <line fill="none" marker-end="url(#end-green)" stroke="#087F5B" stroke-dasharray="10,7" stroke-width="3" x1="680" x2="1060.0" y1="2264" y2="2264.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="875.0" y="2255">21  OrderConfirmed</text>
+  <rect fill="#FFFFFF" height="38" rx="9" ry="9" stroke="none" stroke-width="2" width="259" x="1190.5" y="2318"/>
+  <line fill="none" marker-end="url(#end-green)" stroke="#087F5B" stroke-dasharray="10,7" stroke-width="3" x1="1120" x2="1510.0" y1="2352" y2="2352.0"/>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="23" font-weight="normal" text-anchor="middle" x="1320.0" y="2343">22  OrderConfirmed</text>
+  <rect fill="#EAFBF5" height="106" rx="15" ry="15" stroke="#A6D5C1" stroke-width="2" width="2985" x="106" y="2442"/>
+  <text fill="#087F5B" font-family="DejaVu Sans" font-size="22" font-weight="bold" text-anchor="start" x="135" y="2486">ESTADO FINAL</text>
+  <text fill="#15253A" font-family="DejaVu Sans" font-size="24" font-weight="bold" text-anchor="start" x="390" y="2486">COMPLETED  ·  pedido CONFIRMED  ·  estoque COMMITTED  ·  pagamento CAPTURED</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="20" font-weight="normal" text-anchor="start" x="390" y="2523">Confirmar apenas após pagamento e consolidação do estoque; cada resposta atualiza o estado da Saga.</text>
+  <text fill="#52667F" font-family="DejaVu Sans" font-size="19" font-weight="normal" text-anchor="start" x="100" y="2630">Referência: docs/decisoes-arquiteturais.md  |  Mensageria: entrega ao menos uma vez; não presumir exatamente uma execução.</text>
+</svg>
